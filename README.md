@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This github repository is for the "Coursera Course - Exploratory Data Analysis Assignment 1" and contains images requested for the assignment as well as the underlying R code to reproduce the plots.
+This github repository is for the "Coursera Course - Exploratory Data Analysis Assignment 1" and contains the images requested for the assignment as well as the underlying R code to reproduce the plots (for overview reasons I put them all into one code script).
 
 The plots were generated from the following data:
 Dataset: Electric power consumption
