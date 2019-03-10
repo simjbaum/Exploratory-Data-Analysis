@@ -34,14 +34,13 @@ lines(data_sub$Time, data_sub$Sub_metering_2, col = "red")
 lines(data_sub$Time, data_sub$Sub_metering_3, col = "blue")
 
 legend("topright", col = c("black","red","blue"), lty= c(1,1,1), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
-
 dev.off()
 
 #plot4
 png(filename = "~/Data_Science/exploratory_data_analysis/plot4.png")
 
 #specify margins:
-par(mfcol=c(2,2), mar = c(4,4,2,1)) # oma = c(0,0,2,0), )
+par(mfcol=c(2,2), mar = c(4,4,2,1))
 
 #subplot1
 with(data_sub, plot(Time, Global_active_power, type="l", ylab  ="Global Active Power", xlab=""))  
@@ -51,6 +50,7 @@ with(data_sub, plot(Time, Sub_metering_1, type="l", ylab  ="Energy sub metering"
 lines(data_sub$Time, data_sub$Sub_metering_2, col = "red")
 lines(data_sub$Time, data_sub$Sub_metering_3, col = "blue")
 legend("topright", col = c("black","red","blue"), lty= c(1,1,1), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.75, bty = "n")
+
 #subplots3
 plot(data_sub$Time, data_sub$Voltage, type = "l", xlab="datetime", ylab="Voltage")
 
